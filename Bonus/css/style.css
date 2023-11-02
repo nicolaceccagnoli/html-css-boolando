@@ -142,6 +142,24 @@ div img:nth-of-type(2) {
     top: 5px;
     right: 0;
 }
+
+i {
+    display: inline-block;
+}
+
+/* 
+    BONUS
+*/
+
+.fav:hover i {
+   color: red;
+}
+
+/* 
+    BONUS
+*/
+
+
 .info {
     padding-top: 8px;
 }
@@ -172,23 +190,6 @@ div > a {
 .first-price{
     text-decoration: line-through;
 }
-
-i {
-    display: inline-block;
-}
-
-/* 
-    BONUS
-*/
-
-.fav:hover i {
-   color: red;
-}
-
-/* 
-    BONUS
-*/
-
 
 /* 
     FOOTER
@@ -224,3 +225,4 @@ footer .my-col-1-2:nth-of-type(2) > * {
 .padding-right a {
     padding-right: 8px;
 }
+
