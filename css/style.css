@@ -22,6 +22,10 @@ html{
     max-width: 75%;
 }
 
+h5{
+    font-weight: 400;
+}
+
 /* 
     HEADER
 */
@@ -29,8 +33,10 @@ html{
 header {
     background-color: #FF6800;
     min-height: 50px;
-    color: white;
     padding: 15px 0;
+    /* z-index: 1;
+    position: fixed;
+    width: 100%; */
 }
 
 .menu {
@@ -49,7 +55,7 @@ li{
     padding-right: 5px;
 }
 
-a {
+a{
     font-size: 1.1em;
     text-decoration: none;
     color: white;
@@ -72,14 +78,78 @@ nav img {
 /* 
     MAIN
 */
+
 main{
     min-height: 700px;
     padding: 35px 0;
 }
 
+.card {
+    width: calc(100% / 3);
+}
 
+.card:hover {
+    cursor: pointer;
+}
+.model{
+    position: relative;
+}
 
+.model img{
+    width: 100%;
+    display: block;
+}
 
+div img:nth-of-type(2) {
+    position: absolute;
+    top: 0;
+    display: none;
+}
+
+.discount {
+    background-color: red;
+    bottom: 10%;
+    width: 50px;
+}
+.sustainability {
+    background-color: green;
+    bottom: 10%;
+    left: 52px;
+}
+
+.fav {
+    background-color: white;
+    padding: 8px;
+    top: 5px;
+    right: 0;
+}
+
+.discount, .sustainability{
+    color: white;
+    padding: 3px 6px;
+}
+
+.discount, .sustainability, .fav{
+    position: absolute;
+}
+
+.model:hover img:nth-of-type(2) {
+    display: block;
+}
+
+div > a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+.price{
+    color: red;
+}
+
+.first-price{
+    text-decoration: line-through;
+}
 /* 
     FOOTER
 */
