@@ -40,26 +40,27 @@ h5{
 
 header {
     background-color: #FF6800;
+    width: 100%;
     /* z-index: 1;
     position: fixed;
-    width: 100%; */
+    */
 }
 
 .menu {
     display: flex;
 }
 
-.my-col-1-4 ul {
+.my-col-1-4 ul, .my-col-1-2 ul {
     display: flex;
 }
 
-.my-col-1-4 a {
-    padding-left: 5px;
+.my-col-1-4 a,{
+    padding-left: 8px;
+    
 }
 
 li{
     list-style: none;
-    padding-right: 5px;
 }
 
 a{
@@ -171,4 +172,29 @@ footer {
     background-color: #1A1A1A;
     min-height: 50px;
     color: white;
+}
+
+footer a {
+    color: white;
+}
+
+.legal-info{
+    display: flex;
+}
+
+footer .my-col-1-2:nth-of-type(2) h4 {
+    text-align: end;
+}
+
+footer .my-col-1-2:first-of-type ul{
+    font-size: x-small;
+}
+
+footer .my-col-1-2:nth-of-type(2) > * {
+    font-size: smaller;
+    justify-content: flex-end;
+}
+
+.padding-left a {
+    padding-left: 8px;
 }
